@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" role="img" aria-label="Veterinary practice hero illustration placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dde4fa"/>
+      <stop offset="1" stop-color="#eff2fd"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c2cdf5"/>
+      <stop offset="1" stop-color="#93a9f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="1080" fill="url(#sky)"/>
+  <circle cx="1140" cy="300" r="150" fill="#dde4fa"/>
+  <path d="M0 760c220-70 420-70 700-30s520 40 740-20v370H0Z" fill="url(#ground)"/>
+  <path d="M0 840c260-50 480-30 760 0s440 20 680-30v270H0Z" fill="#6076da" opacity="0.85"/>
+
+  <!-- Dog silhouette -->
+  <g fill="#16216a" transform="translate(560 470)">
+    <ellipse cx="170" cy="300" rx="150" ry="40" fill="#0c1860" opacity="0.15"/>
+    <path d="M70 300V170c0-60 45-110 110-110s110 50 110 110v130h-40v-90c-12 14-30 22-50 24v66h-40v-66c-22-3-40-14-50-30v92Z"/>
+    <circle cx="180" cy="92" r="70"/>
+    <path d="M120 60c-18-26-12-58 4-66 14-7 30 6 36 30Z"/>
+    <path d="M240 60c18-26 12-58-4-66-14-7-30 6-36 30Z"/>
+    <circle cx="160" cy="92" r="8" fill="#eff2fd"/>
+    <circle cx="206" cy="92" r="8" fill="#eff2fd"/>
+    <circle cx="183" cy="118" r="11" fill="#e8843a"/>
+  </g>
+
+  <!-- Floating paw marks -->
+  <g fill="#3f51c4" opacity="0.5">
+    <g transform="translate(250 300) scale(1.4)">
+      <circle cx="6" cy="10" r="6"/><circle cx="20" cy="4" r="6"/><circle cx="34" cy="10" r="6"/>
+      <path d="M20 16c-9 0-16 7-16 15s7 9 16 9 16-1 16-9-7-15-16-15Z"/>
+    </g>
+    <g transform="translate(1080 620) scale(1.1)">
+      <circle cx="6" cy="10" r="6"/><circle cx="20" cy="4" r="6"/><circle cx="34" cy="10" r="6"/>
+      <path d="M20 16c-9 0-16 7-16 15s7 9 16 9 16-1 16-9-7-15-16-15Z"/>
+    </g>
+  </g>
+</svg>

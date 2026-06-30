@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/*
+  CLIFTON — Modern Clinical (Rosevean Red edition)
+  Clifton's clean sans structure with Rosevean's bold red brand identity.
+  Inter throughout (no serif), sharp heading weight, high-contrast UI.
+  Red primary scale + teal CTA for clinical decisiveness.
+*/
+@theme {
+  --color-cream: #fdfcfc;
+  --color-paper: #ffffff;
+
+  --color-ink: #1c0809;
+  --color-muted: #72444b;
+
+  --color-forest-50:  #fef2f3;
+  --color-forest-100: #fddde0;
+  --color-forest-200: #fbb8be;
+  --color-forest-300: #f88a93;
+  --color-forest-400: #f25260;
+  --color-forest-500: #e82534;
+  --color-forest-600: #cf1b29;
+  --color-forest-700: #b81c2e;
+  --color-forest-800: #8e1421;
+  --color-forest-900: #680f18;
+
+  /* Teal CTA — clinical contrast against red primary */
+  --color-coral-400: #22d3ee;
+  --color-coral-500: #06b6d4;
+  --color-coral-600: #0891b2;
+
+  --color-gold: #f59e0b;
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  /* KEY: all headings use Inter (sans), not Fraunces serif */
+  --font-display: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  font-feature-settings: "kern", "liga", "calt";
+}
+
+@layer base {
+  h1, h2, h3, h4 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+
+  /* Clifton: tighten heading weight — sans headlines need more punch */
+  h1, h2 { letter-spacing: -0.03em; font-weight: 700; }
+  h3, h4  { letter-spacing: -0.02em; font-weight: 600; }
+}
+
+::selection {
+  background: var(--color-forest-200);
+  color: var(--color-forest-900);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
