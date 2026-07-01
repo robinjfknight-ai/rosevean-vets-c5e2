@@ -1,10 +1,7 @@
 @import "tailwindcss";
 
 /*
-  CLIFTON — Modern Clinical (Rosevean Red edition)
-  Clifton's clean sans structure with Rosevean's bold red brand identity.
-  Inter throughout (no serif), sharp heading weight, high-contrast UI.
-  Red primary scale + teal CTA for clinical decisiveness.
+  CLIFTON — Sharp Editorial (Rosevean Vets brand: #b81c2e red)
 */
 @theme {
   --color-cream: #fdfcfc;
@@ -13,6 +10,7 @@
   --color-ink: #1c0809;
   --color-muted: #72444b;
 
+  /* Rosevean red scale — derived from brand #b81c2e */
   --color-forest-50:  #fef2f3;
   --color-forest-100: #fddde0;
   --color-forest-200: #fbb8be;
@@ -24,16 +22,26 @@
   --color-forest-800: #8e1421;
   --color-forest-900: #680f18;
 
-  /* Teal CTA — clinical contrast against red primary */
+  /* Teal CTA — clinically decisive */
   --color-coral-400: #22d3ee;
   --color-coral-500: #06b6d4;
   --color-coral-600: #0891b2;
 
   --color-gold: #f59e0b;
 
+  /* All Inter — headings use sans, not display serif */
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  /* KEY: all headings use Inter (sans), not Fraunces serif */
   --font-display: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* SHARP corners — the structural signature of this template */
+  --radius-xl:  0.25rem;   /* 4px  — was 12px */
+  --radius-2xl: 0.5rem;    /* 8px  — was 16px */
+  --radius-3xl: 0.75rem;   /* 12px — was 24px */
+
+  /* Crisp architectural shadows — thin ring + minimal drop */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.10), 0 0 0 1px rgb(0 0 0 / 0.04);
+  --shadow-md: 0 2px 8px -2px rgb(0 0 0 / 0.14), 0 0 0 1px rgb(0 0 0 / 0.04);
+  --shadow-lg: 0 8px 20px -4px rgb(0 0 0 / 0.16), 0 0 0 1px rgb(0 0 0 / 0.04);
 }
 
 :root {
@@ -60,9 +68,11 @@ body {
   h1, h2, h3, h4 { text-wrap: balance; }
   p { text-wrap: pretty; }
 
-  /* Clifton: tighten heading weight — sans headlines need more punch */
-  h1, h2 { letter-spacing: -0.03em; font-weight: 700; }
-  h3, h4  { letter-spacing: -0.02em; font-weight: 600; }
+  /* Maximum tightness — sans headlines need compression to have presence */
+  h1 { letter-spacing: -0.05em; font-weight: 700; }
+  h2 { letter-spacing: -0.04em; font-weight: 700; }
+  h3 { letter-spacing: -0.03em; font-weight: 600; }
+  h4 { letter-spacing: -0.02em; font-weight: 600; }
 }
 
 ::selection {
